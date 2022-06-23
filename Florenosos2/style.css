@@ -1,0 +1,268 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+:root{
+    --clr-bg-light: #f00;
+    --clr-bg-dark: #dc143c;
+    --clr-text: #fff;
+    
+}
+body{
+    margin: 1em;
+    background-color: #e0a0ab;
+    line-height: 2em;
+    font-family: sans-serif;
+    width: 100%;
+
+
+}
+.container{
+    border: outset;
+    position: relative;
+    border-top: 20px;
+    margin: 2em;
+}
+.title{
+}
+.my_title{
+}
+#title-info{
+    color: var(--clr-text);
+    font-size: 35px;
+    background-color: #dc143c;
+    margin: 2em 0;
+    border-spacing: 1em .5em;
+    padding: 1em 1em 1em 1em;
+    
+}
+.titless label{
+    margin-left: 21px;
+    font-weight: bold;
+}
+.details{
+    margin-left: 21px;
+}
+.pi1, .pi2, .pi3, .pi4, .dtl2, .dtl3, .dtl4, .dtl5, .dtl6, .pri1, .pri4, .pdtl, .pdtl2, .pdtl4, .note1{
+    display: flex;
+    margin: 2em 0;
+    /*justify-content: space-between;
+    flex-direction: column;*/
+}
+
+.fpi1 label, .mpi1 label, .lpi1 label, .api2 label, .spi2 label, .pi3 label, .emailadds label, .phonenum label, .ddtl2 label, .ddtl3 label, .ddtl4 label, .ddtl5 label, .ddtl6 label, .ddtl7 label, .ddtl8 label, .ddtl9 label, .ddtl10 label, .ddtl11 label, .pri2 label, .pri3 label, .pri5 label, .pri6 label, .pdtl1 label, .pdtl3 label, .pdtl5 label, .note, .note2 label, .ccc label{
+    font-weight: bold;
+}
+
+.fpi1 input, .mpi1 input, .lpi1 input, .api2 input, .spi2 select, .genpi3 input, .genppi3 input, .emailadds input, .phonenum input, .ddtl2 input, .ddtl3 input, .ddtl4 input, .ddtl5 input, .ddtl6 input, .ddtl7 input, .ddtl8 input, .ddtl9 input, .ddtl10 input, .ddtl11 input, .pri2 input, .pri3 input, .pri5 input, .pri6 input, .pdtl1 input, .pdtl3 input, .pdtl5 input, .note2 input{
+    flex-direction: column;
+    display: flex;
+    height: 50px;
+    margin-right: 2em;
+    padding: 0 15px;
+    border: solid crimson;
+
+}
+.fpi1 input, .mpi1 input, .lpi1 input{
+
+    width: min(800px, 95%);
+}
+
+.api2 input{
+    width: min(1100px, 95%);
+}
+.spi2 select{
+    width: min(200px, 95%);
+    text-align: center;
+}
+.state select option text{
+    margin: 2em 0;
+    text-align: center;
+}
+
+.pi3 input{
+
+}
+.pi4 label{
+    width: 600px;
+}
+.btnss1{
+    text-align: center;
+}
+#btnss{
+    border: none;
+    color: var(--clr-text);
+    font-size: 18px;
+    background-color: #dc143c;
+    margin: 2em 0;
+    border-spacing: 1em .5em;
+    padding: 1em 1em 1em 1em;
+    border-radius: 55.685px;
+}
+.atre{
+}
+
+/*
+.radio-item [type="radio"]{
+    display: none;
+}
+
+.radio-item + .radio-item{
+    margin-top: 15px;
+}
+.radio-item label{
+    display: block;
+    padding: 20px 60px;
+    background: #fff;
+    border:2px solid crimson;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 400;
+    min-width: 250px;
+    white-space: nowrap;
+    position: relative;
+}
+.radio-item label:after,
+.radio-item label:before{
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+}
+
+.radio-item label:after{
+    height: 20px;
+    width: 20px;
+    border:2px solid #524eee;
+    left: 20px;
+    top: calc(50% - 12px);
+}
+.radio-item label:before{
+    background: #524eee;
+    height: 10px;
+    width: 10px;
+    left: 27px;
+    top: calc(50% - 5px);
+    transform: scale(5);
+    transition: .4s ease-in-out 0s;
+    opacity: 0;
+    visibility: hidden;
+}
+.radio-item [type="radio"]:checked ~ label{
+    border-color: #524eee;
+}
+
+.radio-item [type="radio"]:checked ~ label:before{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+}*/
+
+/*.radio-item [type="radio"]{
+    display: none;
+}*/
+.radio-section{
+    display: flex;
+}
+.radio-item + .radio-item{
+    margin-top: 15px;
+}
+.radio-item label{
+    display: block;
+    padding: 20px 60px;
+    background: #1d1d42;
+    border:2px solid rgba(255,255,255,0.1);
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 400;
+    min-width: 250px;
+    white-space: nowrap;
+    position: relative;
+}
+.radio-item label:after,
+.radio-item label:before{
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+}
+
+.radio-item label:after{
+    height: 20px;
+    width: 20px;
+    border:2px solid #524eee;
+    left: 20px;
+    top: calc(50% - 12px);
+}
+.radio-item label:before{
+    background: #524eee;
+    height: 10px;
+    width: 10px;
+    left: 27px;
+    top: calc(50% - 5px);
+    transform: scale(5);
+    transition: .4s ease-in-out 0s;
+    opacity: 0;
+    visibility: hidden;
+}
+.radio-item [type="radio"]:checked ~ label{
+    border-color: #524eee;
+}
+
+.radio-item [type="radio"]:checked ~ label:before{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+}
+
+
+#attresume{
+    border: none;
+    color: var(--clr-text);
+    font-size: 18px;
+    background-color: #dc143c;
+    margin: 2em 0;
+    border-spacing: 1em .5em;
+    padding: 1em 1em 1em 1em;
+
+}
+.final{
+}
+
+.final1{
+    text-align: left;
+}
+
+.final2{
+    text-align: right;
+}
+
+#finalsub{
+    border: none;
+    color: var(--clr-text);
+    font-size: 18px;
+    background-color: #dc143c;
+    margin: 2em 0;
+    border-spacing: 1em .5em;
+    padding: 1em 1em 1em 1em;
+}
+
+#sig-canvas{
+    border: 2px ridge #CCCCCC;
+    border-radius: 15px;
+    cursor: crosshair;
+    height: 80px;
+    width: 100%;
+    max-width: 350px;
+    background-color: #fff;
+}
+@media(min-width: 105px){
+    body{
+        margin: 0;
+    }
+}
+
+#footers{
+    margin-bottom: 4em;
+}
